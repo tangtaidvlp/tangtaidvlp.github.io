@@ -1,0 +1,21 @@
+<svg width="1920" height="669" viewBox="0 0 1920 669" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="211.472" y1="230.084" x2="0.417449" y2="550.275" stroke="white"/>
+<ellipse cx="212.79" cy="228.227" rx="5.04765" ry="5.2755" transform="rotate(-12.2638 212.79 228.227)" fill="white"/>
+<g opacity="0.5">
+<line x1="594.341" y1="142.549" x2="187.395" y2="668.306" stroke="white"/>
+<ellipse rx="6.51257" ry="6.13229" transform="matrix(0.99999 0.00445745 -0.00996338 0.99995 593.448 142.662)" fill="white"/>
+</g>
+<g opacity="0.7">
+<line x1="1102.52" y1="9.73523" x2="485.365" y2="668.342" stroke="white"/>
+<ellipse cx="1102.14" cy="10.3159" rx="8.61352" ry="8.78622" transform="rotate(-11.4038 1102.14 10.3159)" fill="white"/>
+</g>
+<g opacity="0.3">
+<line x1="1417.96" y1="178.942" x2="959.558" y2="668.523" stroke="white"/>
+<ellipse cx="1416.55" cy="179.729" rx="5.69017" ry="5.7167" transform="rotate(-11.3994 1416.55 179.729)" fill="white"/>
+</g>
+<g opacity="0.5">
+<line x1="1670.97" y1="328.682" x2="1322.35" y2="668.358" stroke="white"/>
+<ellipse cx="1670.32" cy="328.782" rx="4.12427" ry="4.40402" transform="rotate(-9.76848 1670.32 328.782)" fill="white"/>
+</g>
+<line x1="1920.33" y1="427.375" x2="1647.33" y2="668.375" stroke="white"/>
+</svg>

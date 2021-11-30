@@ -1,0 +1,74 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    /* --ff-primary: 'Roboto', san-serif; */
+    /* --ff-secondary: 'Segoe UI', monospace; */
+
+    --fw-reg: 300;
+    --fw-med:450;
+    --fw-semi-bold: 500;
+    --fw-bold: 600;
+    --fw-light: 250;
+
+    --clr-light: #FFFFFF;
+    --clr-dark: #000000;
+    --clr-accent: #007be6;
+    --clr-light-grey: #999999;
+
+    --fs-h1: 2.25rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1.75rem;
+    --fs-h4: 1.25rem;
+    --fs-h5: 1rem;
+    --fs-body: 1rem;
+    --fs-small: 0.85rem;
+}
+
+/* Default  */
+h1 {
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-reg);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-reg);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-reg);
+}
+
+h4 {
+    font-size: var(--fs-h4);
+    font-weight: var(--fw-reg);
+}
+
+h5 {
+    font-size: var(--fs-h5);
+    font-weight: var(--fw-reg);
+}
+
+p {
+    font-size: var(--fs-body);
+    font-weight: var(--fw-reg);
+}
+
+span {
+    font-size: var(--fs-body);
+    font-weight: var(--fw-reg);
+}
+
+body {
+    background-color: var(--clr-white);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
