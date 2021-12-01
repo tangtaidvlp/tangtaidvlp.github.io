@@ -90,10 +90,63 @@ a, a:hover {
 }
 
 
-
+/* Footer */
 
 footer {
     height: 40vh;
     background-color: #0D7AC0;
     margin-top: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.footer_nav {
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* Social Media */
+
+.footer_social_media {
+    text-align: center;
+}
+
+.ic_social_media {
+    width: 3rem;
+    height: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.footer_nav__link {
+    color: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* Contact infor */
+
+.footer_contact_infor {
+    position: absolute;
+    left: 1em;
+    bottom: 1em;
+}
+
+.footer_contact_infor > p {
+    color: white;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+
+/* Copyright */
+
+footer > .copy-right {
+    color: white;
+    opacity: 0.8;
+    text-align: center;
 }
