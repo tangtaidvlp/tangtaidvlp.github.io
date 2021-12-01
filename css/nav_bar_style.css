@@ -32,6 +32,11 @@
     opacity: 0.5;
 }
 
+.nav-link.active {
+    display: inline-flex;
+    align-items: center;
+}
+
 .nav-link.active .nav-link-icon {
     height: 1.2rem;
     width: 1.2rem;

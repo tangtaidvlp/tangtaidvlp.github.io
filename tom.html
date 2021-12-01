@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>Tom Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.11.0/build/cssnormalize/cssnormalize-min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/tom_style.css">
@@ -31,14 +32,14 @@
         <!-- Features -->
         <section class="tom-features">
             <div class="tom-features__description-section">
-                <h2 class="section_title">Features</h2>
+                <h1 class="section_title">Features</h1>
                 <p>Create flashcard (can have both text and image)</p>
                 <p>Manage flashcard, group them into sets</p>
                 <p>Playing flashcard with four playing modes:</p>
-                <p class="ml-3">- Basic</p>
-                <p class="ml-3">- Puzzle</p>
-                <p class="ml-3">- Writing</p>
-                <p class="ml-3">- Quiz</p>
+                <p class="ml-3"><span class="mr-3">-</span><span>Basic</span></p>
+                <p class="ml-3"><span class="mr-3">-</span><span>Puzzle</span></p>
+                <p class="ml-3"><span class="mr-3">-</span><span>Writing</span></p>
+                <p class="ml-3"><span class="mr-3">-</span><span>Quiz</span></p>
                 <p>English - Vietnamese dictionary</p>
                 <p>Translate with Google (unavailable now)</p>
                 <p>Create flashcard from translation</p>
@@ -46,7 +47,87 @@
                 <p>Change UI theme</p>
             </div>
             <iframe class="tom-video" src="https://www.youtube.com/embed/j-URkZXP-jE?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>  
+        </section> 
+        
+        <!-- Basic UIs -->
+        <section class="tom-basic-ui image-section">
+            <h1 class="section_title text-center">Basic UI</h1>
+            <div class="row image-row">
+                <div class="tom-image col-3" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
+                    <h4 class="tom-image__title">Main menu</h4>
+                    <img class="tom-image__image" src="image/tom-main-menu.png">
+                </div>
+                <div class="tom-image col-3" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
+                    <h4 class="tom-image__title">Create flashcard</h4>
+                    <img class="tom-image__image" src="image/tom-create-flashcard.png">
+                </div>
+                <div class="tom-image col-3" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
+                    <h4 class="tom-image__title">En-Vi Dictionary</h4>
+                    <img class="tom-image__image" src="image/tom-dictionary.png">
+                </div>
+                <div class="tom-image col-3" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
+                    <h4 class="tom-image__title">Vocabulary detail</h4>
+                    <img class="tom-image__image" src="image/tom-vocabulary.png">
+                </div>
+            </div>
+        </section> 
+
+        <!-- Flashcard playing mode -->
+        <section class="tom-playing-mode-ui image-section">
+            <h1 class="section_title text-center">Flashcard playing mode</h1>
+            <div class="row image-row">
+                <div class="tom-image col-3" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
+                    <h4 class="tom-image__title">Basic mode</h4>
+                    <img class="tom-image__image" src="image/tom-basic-mode.png">
+                </div>
+                <div class="tom-image col-3" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
+                    <h4 class="tom-image__title">Puzzle mode</h4>
+                    <img class="tom-image__image" src="image/tom-puzzle-mode.png">
+                </div>
+                <div class="tom-image col-3" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
+                    <h4 class="tom-image__title">Writing mode</h4>
+                    <img class="tom-image__image" src="image/tom-writing-mode.png">
+                </div>
+                <div class="tom-image col-3" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
+                    <h4 class="tom-image__title">Quiz mode</h4>
+                    <img class="tom-image__image" src="image/tom-quiz-mode.png">
+                </div>
+            </div>
+        </section> 
+
+
+        <!-- Others UIs -->
+        <section class="tom-other-ui image-section">
+            <h1 class="section_title text-center">Basic UI</h1>
+            <div class="row image-row">
+                <div class="tom-image col-3" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
+                    <h4 class="tom-image__title">Main menu</h4>
+                    <img class="tom-image__image" src="image/tom-add-flashcard.png">
+                </div>
+                <div class="tom-image col-3" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
+                    <h4 class="tom-image__title">Create flashcard</h4>
+                    <img class="tom-image__image" src="image/tom-navigation-bar.png">
+                </div>
+                <div class="tom-image col-3" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
+                    <h4 class="tom-image__title">En-Vi Dictionary</h4>
+                    <img class="tom-image__image" src="image/tom-flashcard-list.png">
+                </div>
+                <div class="tom-image col-3" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
+                    <h4 class="tom-image__title">Vocabulary detail</h4>
+                    <img class="tom-image__image" src="image/tom-floating-dictionary.png">
+                </div>
+            </div>
+        </section> 
+
     </section>
+
+    <footer style="margin-top: 200vh;">
+
+	</footer>
+    
+    <script src="js/tom_code.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 
 </body>

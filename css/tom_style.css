@@ -69,8 +69,8 @@
 }
 
 .tom-video {
-    width:39.4vh;
-    height:85.5vh;
+    width:36.92vh;
+    height:80vh;
     border-radius: 15px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.35); 
 }
@@ -82,4 +82,43 @@
 
 .tom-features__description-section > * {
     opacity: 0.9;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
 }
+
+
+/* Image Section */
+
+.image-section {
+    margin-top: 20vh;
+    padding: 0 3rem;
+}
+
+.section_title.text-center {
+    margin-bottom: 3rem;
+}
+
+.image-row {
+    padding: 0 2rem;
+}
+
+.tom-image__image {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.tom-image__image:hover {
+    transform: scale(1.06, 1.06);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.35);
+}
+
+.tom-image__title {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
