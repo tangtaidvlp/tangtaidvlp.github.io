@@ -31,7 +31,9 @@
     --fs-body: 1.2rem;
     --fs-small: 0.85rem;
 
-    --nav-bar-height:3.1rem;
+    --nav-bar-height: 3.1rem;
+
+    --section-space: 15rem;
 }
 
 /* Default  */
@@ -85,4 +87,13 @@ ul {
 
 a, a:hover {
     text-decoration: none;
+}
+
+
+
+
+footer {
+    height: 40vh;
+    background-color: #0D7AC0;
+    margin-top: 50vh;
 }

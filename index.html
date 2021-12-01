@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-	<meta name="viewport" value="width=screen-width, initial-scale=2.0" >
+	<meta name="viewport" value="width=screen-width, initial-scale=1.0" >
 	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.11.0/build/cssnormalize/cssnormalize-min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/index_style.css">
@@ -11,13 +11,10 @@
 	<!-- Navigation bar -->
 	<nav class="nav-bar">
 		<ul class="nav-link-list">
-			<li class="nav-link active">
-				<img class="nav-link-icon" src="image/project-icon.svg">
-				<a href="#">Project</a>
+			<li id="nav-project" class="nav-link active">
+				<a href="#tom_section">Project</a>
 			</li>
-			<li class="nav-link"><a href="#">Project</a></li>
-			<li class="nav-link"><a href="#">About</a></li>
-			<li class="nav-link"><a href="#">Contact</a></li>
+			<li id="nav-about" class="nav-link"><a href="#about-me-section">About</a></li>
 		</ul>
 	</nav>
 
@@ -53,18 +50,18 @@
 		</div>
 		<div class="fem__right_section">
 			<img class="project-title mb-3" src="image/fem-title.svg">
-			<p class="project-description mt-0">My biggest group project. An application for FPT Event organizers to post their event information on and students, lecturers can see, keep track, interact.  </p>
+			<p class="project-description mt-0 text-right">My biggest group project. An application for FPT Event organizers to post their event information on and students, lecturers can see, keep track, interact.  </p>
 			<a class="more-detail-button more-detail--right">More detail</a>
 		</div>
 	</section>
 
-
-	<h1 style="margin-top: 10vh; color: rgb(230, 67, 67); text-align: center;">I am so sorry if you see this text!</h1>
-	<h1 style="margin-top: 1vh; color: rgb(230, 67, 67); text-align: center;">Because my Portfolio is still in progress and not finished yet. I am trying to complete it.</h1>
-	<h1 style="margin-top: 1vh; color: rgb(230, 67, 67); text-align: center;">One more times, sorry!</h1>
-
-
-	<footer style="margin-top: 200vh;">
-
+	<section id="about-me-section">
+		<h2 class="about-me__title">About me</h2>
+	</section>
+	
+	<footer>
+		<p class="copy-right">Copyright © 2021 Tang Tan Tai</p>
 	</footer>
+
+	<script src="js/index_code.js"></script>
 </body>
