@@ -1,1 +1,85 @@
 @import url(nav_bar_style.css);
+
+
+/* Poster */
+.tom-poster {
+    margin-top: var(--nav-bar-height);
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3rem;
+
+    background: rgb(0,142,152);
+    background: -moz-linear-gradient(157deg, rgba(0,142,152,1) 0%, rgba(2,193,0,1) 100%);
+    background: -webkit-linear-gradient(157deg, rgba(0,142,152,1) 0%, rgba(2,193,0,1) 100%);
+    background: linear-gradient(157deg, rgba(0,142,152,1) 0%, rgba(2,193,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#008e98",endColorstr="#02c100",GradientType=1);
+}
+
+.tom-poster > * {
+    color: white;
+}
+
+.tom-poster__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: var(--fs-h0);
+    font-weight: var(--fw-med);
+}
+
+.tom-poster__type {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.tom-poster__description {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    opacity: 0.8;
+}
+
+
+/* General */
+#tom-description {
+    width: 100%;
+    padding: 0 2rem;
+}
+
+#tom-description > section {
+    width: 100%;
+}
+
+.section_title {
+    width: 100%;
+    display: block;
+    align-items: center;
+    font-weight: var(--fw-semibold);
+}
+
+/* Tom Features */
+
+.tom-features {
+    margin-top: 3rem;
+    position: relative;
+    padding: 1rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tom-video {
+    width:39.4vh;
+    height:85.5vh;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.35); 
+}
+
+.tom-features__description-section {
+    width: fit-content;
+    max-width: calc(100vw - 11rem - 39.6vh);
+}
+
+.tom-features__description-section > * {
+    opacity: 0.9;
+}

@@ -6,22 +6,47 @@
     <link rel="stylesheet" type="text/css" href="css/tom_style.css">
 </head>
 <body>
-    <section class="briefly-information">
-		<img class="background" src="image/briefly-infor-background.png">
-		<img class="background-decoration" src="image/projectile-background.svg">
+    <!-- Navigation bar -->
+    <nav class="nav-bar">
+        <ul class="nav-link-list">
+            <li class="nav-link active">
+                <img class="nav-link-icon" src="image/project-icon.svg">
+                <a href="#">Project</a>
+            </li>
+            <li class="nav-link"><a href="#">About</a></li>
+            <li class="nav-link"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-		<!-- Navigation bar -->
-		<nav class="nav-bar">
-			<ul class="nav-link-list">
-				<li class="nav-link active">
-					<img class="nav-link-icon" src="image/project-icon.svg">
-					<a href="#">Project</a>
-				</li>
-				<li class="nav-link"><a href="#">About</a></li>
-				<li class="nav-link"><a href="#">Contact</a></li>
-			</ul>
-		</nav>
+    <!-- Poster -->
+    <section class="tom-poster">
+        <h1 class="tom-poster__title">Tom</h1>
+        <h3 class="tom-poster__type">Android application</h3>
+        <h5 class="tom-poster__description">
+            My two years side-project, a mobile application for managing flashcard and play with them for learning any languages. Besides, I create a English-Vietnamese dictionary for it with a real big dictionary resource file from the Internet
+        </h5>
 	</section>
 
-    <iframe style="width:18rem;height:39rem;border-radius: 15px;box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);" src="https://www.youtube.com/embed/j-URkZXP-jE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <section id="tom-description">
+        <!-- Features -->
+        <section class="tom-features">
+            <div class="tom-features__description-section">
+                <h2 class="section_title">Features</h2>
+                <p>Create flashcard (can have both text and image)</p>
+                <p>Manage flashcard, group them into sets</p>
+                <p>Playing flashcard with four playing modes:</p>
+                <p class="ml-3">- Basic</p>
+                <p class="ml-3">- Puzzle</p>
+                <p class="ml-3">- Writing</p>
+                <p class="ml-3">- Quiz</p>
+                <p>English - Vietnamese dictionary</p>
+                <p>Translate with Google (unavailable now)</p>
+                <p>Create flashcard from translation</p>
+                <p>Floating dictionary as Bubble chat of Messenger app</p>
+                <p>Change UI theme</p>
+            </div>
+            <iframe class="tom-video" src="https://www.youtube.com/embed/j-URkZXP-jE?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>  
+    </section>
+
 </body>
