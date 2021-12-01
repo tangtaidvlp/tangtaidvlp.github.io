@@ -209,4 +209,30 @@
     font-weight: var(--fw-semi-bold);
  }
 
+.personal_infor {
+    margin-top: 20rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.personal_infor > .my_avatar {
+    width: 20vw;
+    height: auto;
+    border-radius: 0.3rem;
+    outline: 4px solid rgba(0, 0, 0, 0.8);
+}
+
+
+.personal_infor > .my_name {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-weight: var(--fw-med);
+}
+
+.personal_infor > .my_job_title {
+    margin-top: 0.7rem;
+    margin-bottom: 0;
+    font-weight: var(--fw-med);
+}
