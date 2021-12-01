@@ -7,24 +7,12 @@
     <link rel="stylesheet" type="text/css" href="css/tom_style.css">
 </head>
 <body>
-    <!-- Navigation bar -->
-    <nav class="nav-bar">
-        <ul class="nav-link-list">
-            <li class="nav-link active">
-                <img class="nav-link-icon" src="image/project-icon.svg">
-                <a href="#">Project</a>
-            </li>
-            <li class="nav-link"><a href="#">About</a></li>
-            <li class="nav-link"><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-
     <!-- Poster -->
     <section class="tom-poster">
         <h1 class="tom-poster__title">Tom</h1>
         <h3 class="tom-poster__type">Android application</h3>
         <h5 class="tom-poster__description">
-            My two years side-project, a mobile application for managing flashcard and play with them for learning any languages. Besides, I create a English-Vietnamese dictionary for it with a real big dictionary resource file from the Internet
+            My two years side-project, a mobile application for managing flashcard and play with them for learning any languages. <br> Besides, I create a English-Vietnamese dictionary for it with a real big dictionary resource file from the Internet
         </h5>
 	</section>
 
@@ -49,23 +37,55 @@
             <iframe class="tom-video" src="https://www.youtube.com/embed/j-URkZXP-jE?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section> 
         
+
+        <!-- Used technology -->
+        <section class="tom-technology image-section">
+            <h1 class="section_title">Technology</h1>
+            <span class="technology__title">Framework</span> 
+            <span class="technology__value"> Android</span> <br>
+
+            <span class="technology__title">Used language</span> 
+            <span class="technology__value"> Kotlin</span> <br>
+
+            <span class="technology__title">Local database</span> 
+            <span class="technology__value"> Room library & SQL-Lite </span> <br>
+
+            <span class="technology__title">Architecture</span> 
+            <span class="technology__value"> Model-View-View Model</span> <br>
+
+            <span class="technology__title">DI library</span> 
+            <span class="technology__value"> Dagger</span> <br>
+        </section> 
+
+        <!-- My role -->
+        <section class="tom-role image-section">
+            <h1 class="section_title">My role</h1>
+            <p>I was not lonely when starting this project. I suggested this idea to my friend and we worked together to build this app at the early stage. But then my friend did not feel interested in this project anymore so he decided to leave.</p>
+            <p>So I am responsible for building 95% of this app, with a little hope that I can publish it on Google Play Store (it failed). It takes 2 years because the first version of this app is very simple. There were only 3 buttons on home screen.
+                Actually, I researched and referenced to another app (like TFlat) for improving my app functions 
+                and I did refactor this project idea and UI up to 5 times to come up with 
+                this final version. These time really help me increase my design skill.
+            </p>
+            <p><i>As I said, I did almost everything in this project. Code, UI and Database Design</i></p>
+        </section> 
+
         <!-- Basic UIs -->
         <section class="tom-basic-ui image-section">
             <h1 class="section_title text-center">Basic UI</h1>
             <div class="row image-row">
-                <div class="tom-image col-3" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
+                <div class="tom-image col-3 --js" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
                     <h4 class="tom-image__title">Main menu</h4>
                     <img class="tom-image__image" src="image/tom-main-menu.png">
                 </div>
-                <div class="tom-image col-3" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
+                <div class="tom-image col-3 --js" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
                     <h4 class="tom-image__title">Create flashcard</h4>
                     <img class="tom-image__image" src="image/tom-create-flashcard.png">
                 </div>
-                <div class="tom-image col-3" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
+                <div class="tom-image col-3 --js" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
                     <h4 class="tom-image__title">En-Vi Dictionary</h4>
                     <img class="tom-image__image" src="image/tom-dictionary.png">
                 </div>
-                <div class="tom-image col-3" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
+                <div class="tom-image col-3 --js" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
                     <h4 class="tom-image__title">Vocabulary detail</h4>
                     <img class="tom-image__image" src="image/tom-vocabulary.png">
                 </div>
@@ -76,19 +96,19 @@
         <section class="tom-playing-mode-ui image-section">
             <h1 class="section_title text-center">Flashcard playing mode</h1>
             <div class="row image-row">
-                <div class="tom-image col-3" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
+                <div class="tom-image col-3 --js" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
                     <h4 class="tom-image__title">Basic mode</h4>
                     <img class="tom-image__image" src="image/tom-basic-mode.png">
                 </div>
-                <div class="tom-image col-3" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
+                <div class="tom-image col-3 --js" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
                     <h4 class="tom-image__title">Puzzle mode</h4>
                     <img class="tom-image__image" src="image/tom-puzzle-mode.png">
                 </div>
-                <div class="tom-image col-3" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
+                <div class="tom-image col-3 --js" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
                     <h4 class="tom-image__title">Writing mode</h4>
                     <img class="tom-image__image" src="image/tom-writing-mode.png">
                 </div>
-                <div class="tom-image col-3" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
+                <div class="tom-image col-3 --js" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
                     <h4 class="tom-image__title">Quiz mode</h4>
                     <img class="tom-image__image" src="image/tom-quiz-mode.png">
                 </div>
@@ -98,26 +118,27 @@
 
         <!-- Others UIs -->
         <section class="tom-other-ui image-section">
-            <h1 class="section_title text-center">Basic UI</h1>
+            <h1 class="section_title text-center">Others UI</h1>
             <div class="row image-row">
-                <div class="tom-image col-3" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
+                <div class="tom-image col-3 --js" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
                     <h4 class="tom-image__title">Main menu</h4>
                     <img class="tom-image__image" src="image/tom-add-flashcard.png">
                 </div>
-                <div class="tom-image col-3" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
+                <div class="tom-image col-3 --js" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
                     <h4 class="tom-image__title">Create flashcard</h4>
                     <img class="tom-image__image" src="image/tom-navigation-bar.png">
                 </div>
-                <div class="tom-image col-3" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
+                <div class="tom-image col-3 --js" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
                     <h4 class="tom-image__title">En-Vi Dictionary</h4>
                     <img class="tom-image__image" src="image/tom-flashcard-list.png">
                 </div>
-                <div class="tom-image col-3" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
+                <div class="tom-image col-3 --js" onmouseover="onImageHover(this)" onmouseout="onImageOut(this)">
                     <h4 class="tom-image__title">Vocabulary detail</h4>
                     <img class="tom-image__image" src="image/tom-floating-dictionary.png">
                 </div>
             </div>
         </section> 
+
 
     </section>
 

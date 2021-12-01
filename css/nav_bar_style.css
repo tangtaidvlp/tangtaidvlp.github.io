@@ -23,6 +23,7 @@
     display: inline-block;
     margin-right: 1.5rem;
     margin-left: 1.5rem;
+    padding: 0;
 }
 
 .nav-link-list .nav-link > a {

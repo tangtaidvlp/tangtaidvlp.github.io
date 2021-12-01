@@ -3,7 +3,6 @@
 
 /* Poster */
 .tom-poster {
-    margin-top: var(--nav-bar-height);
     height: 60vh;
     display: flex;
     flex-direction: column;
@@ -102,6 +101,10 @@
     padding: 0 2rem;
 }
 
+.tom-image {
+    transition: opacity 0.4s ease-in-out;
+}
+
 .tom-image__image {
     width: 100%;
     height: auto;
@@ -112,7 +115,7 @@
 
 .tom-image__image:hover {
     transform: scale(1.06, 1.06);
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .tom-image__title {
@@ -122,3 +125,15 @@
     margin-bottom: 1rem;
 }
 
+
+/* Technology */
+.technology__title {
+    width: 13rem;
+    display: inline-block;
+}
+
+.technology__value {
+    width: 13rem;
+    display: inline-block;
+    text-align: right;
+}
