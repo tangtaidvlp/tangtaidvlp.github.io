@@ -18,6 +18,7 @@
 
     --clr-light: #FFFFFF;
     --clr-dark: #000000;
+    --clr-title-color: #303030;
     --clr-accent: #007CD1;
     --clr-light-grey: #999999;
 
@@ -40,26 +41,31 @@
 h1 {
     font-size: var(--fs-h1);
     font-weight: var(--fw-reg);
+    color: var(--clr-title-color)
 }
 
 h2 {
     font-size: var(--fs-h2);
     font-weight: var(--fw-reg);
+    color: var(--clr-title-color)
 }
 
 h3 {
     font-size: var(--fs-h3);
     font-weight: var(--fw-reg);
+    color: var(--clr-title-color)
 }
 
 h4 {
     font-size: var(--fs-h4);
     font-weight: var(--fw-reg);
+    color: var(--clr-title-color)
 }
 
 h5 {
     font-size: var(--fs-h5);
     font-weight: var(--fw-reg);
+    color: var(--clr-title-color)
 }
 
 p {
@@ -95,7 +101,7 @@ a, a:hover {
 footer {
     height: 40vh;
     background-color: #0D7AC0;
-    margin-top: 50vh;
+    margin-top: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -150,3 +156,36 @@ footer > .copy-right {
     opacity: 0.8;
     text-align: center;
 }
+
+
+
+/* Align */
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+
+/* Other */
+
+.thanks-word {
+    margin-top: 30vh;
+}
+
+.btn-back {
+    color: var(--clr-light-grey);
+    cursor: pointer;
+}
+
+.btn-back:hover {
+    color: #007CD1;
+}
+

@@ -30,10 +30,11 @@
 }
 
 .briefly-information > .background-decoration {
-    width: 100%;
-    height: auto;
+    height: 90%;
+    width: auto;
     bottom: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     position: absolute;
     z-index: -1;
 }
@@ -76,14 +77,26 @@
 
 
 /* Project General  */
+
 .project-title {
     height: 5rem;
+}
+
+h3.full-screen-title {
+    margin-top: 60vh;
+    margin-bottom: 60vh;
+    font-weight: var(--fw-med);
+    padding: 1rem 1rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--clr-accent);
 }
 
 .project-description {
     margin-top: 0.3rem;
     font-size: var(--fs-h4);
-    font-weight: var(--fw-semi-bold);
+    opacity: 0.8;
 }
 
 .description_section {
@@ -203,36 +216,93 @@
 
 /* About me */
 
-.about-me__title {
-    text-align: center;
-    margin-top: var(--section-space);
-    font-weight: var(--fw-semi-bold);
- }
+#about-me-section, #achievement-section {
+    padding: 0 10vw;
+}
+
+.about-title {
+    display: block;
+    margin: 55vh auto;
+    height: 2.4rem;
+}
 
 .personal_infor {
-    margin-top: 20rem;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
 .personal_infor > .my_avatar {
     width: 20vw;
     height: auto;
-    border-radius: 0.3rem;
-    outline: 4px solid rgba(0, 0, 0, 0.8);
+    border-radius: 0.7rem;
+    border: 0.4rem solid rgba(255, 255, 255);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
+.my_avatar__decor {
+    width: 100%;
+    height: 1px;
+    background-color: var(--clr-light-grey);
+}
 
 .personal_infor > .my_name {
-    margin-top: 2rem;
+    margin-top: 1.2rem;
     margin-bottom: 0;
     font-weight: var(--fw-med);
 }
 
-.personal_infor > .my_job_title {
-    margin-top: 0.7rem;
-    margin-bottom: 0;
+.my_description {
+    margin-top: 3rem;
+    font-size: var(--fs-h5);
+}
+
+
+/* Tech icon */
+
+#tech-icon-section {
+    margin-top: 50vh;
+}
+
+.tech-icon-row {
+    text-align: center;
+    margin: 0rem 3rem;
+}
+
+.tech-icon-row > .tech-icon{
+    width: 6.5%;
+    height: auto;
+    margin-right: 1%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+}
+
+.tech-icon-row > .tech-icon:last-child {
+    margin-right: 0 !important;
+}
+
+/* Achievement */
+#achievement-section {
+    margin-top: 50vh;
+}
+
+.my_achieve_image {
+    width: 35vw;
+    display: block;
+    margin: 0 auto;   
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    transform: rotateZ(-2deg);
+    margin-top: 5vh;
+}
+
+.my_achieve_title, .my_skill_title {
     font-weight: var(--fw-med);
+}
+
+.my_achieve_description {
+    margin-top: 5vh;
+    font-size: var(--fs-h5);
 }
