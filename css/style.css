@@ -11,7 +11,7 @@
     /* --ff-secondary: 'Segoe UI', monospace; */
 
     --fw-reg: 330;
-    --fw-med:450;
+    --fw-med:400;
     --fw-semi-bold: 500;
     --fw-bold: 600;
     --fw-light: 250;
@@ -20,6 +20,7 @@
     --clr-dark: #000000;
     --clr-title-color: #303030;
     --clr-accent: #0159dc;
+    --clr-fem-orange: #ff4d00;
     --clr-light-grey: #999999;
 
     --fs-max: 3.5rem;
