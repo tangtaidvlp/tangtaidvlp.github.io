@@ -26,7 +26,11 @@
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: var(--clr-accent);
+    background: rgb(0,55,124);
+    background: -moz-linear-gradient(56deg, var(--clr-accent) 0%, rgba(0,136,247,1) 100%);
+    background: -webkit-linear-gradient(56deg, var(--clr-accent) 0%, rgba(0,136,247,1) 100%);
+    background: linear-gradient(56deg, var(--clr-accent) 0%, rgba(0,136,247,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00377c",endColorstr="#0088f7",GradientType=1);
 }
 
 .briefly-information > .background-decoration {
@@ -82,15 +86,26 @@
     height: 5rem;
 }
 
-h3.full-screen-title {
+.full-screen-title {
     margin-top: 60vh;
     margin-bottom: 60vh;
+}
+
+.full-screen-title > h3 {
     font-weight: var(--fw-med);
-    padding: 1rem 1rem;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
     color: var(--clr-accent);
+    margin-bottom: 1rem;
+}
+
+.down-arrow-ic {
+    width: 1.5rem;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    opacity: 0.7;
 }
 
 .project-description {
@@ -226,6 +241,9 @@ h3.full-screen-title {
     height: 2.4rem;
 }
 
+.about_me__sub-title {
+}
+
 .personal_infor {
     width: 100%;
     display: flex;
@@ -306,3 +324,4 @@ h3.full-screen-title {
     margin-top: 5vh;
     font-size: var(--fs-h5);
 }
+
