@@ -45,6 +45,13 @@
     padding: 0 2rem;
 }
 
+@media only screen and (max-width: 768px) {
+    #tom-description {
+        width: 100%;
+        padding: 0 1.5rem;
+    }   
+}
+
 #tom-description > section {
     width: 100%;
 }
@@ -77,6 +84,7 @@
 .tom-features__description-section {
     width: fit-content;
     max-width: calc(100vw - 11rem - 39.6vh);
+    text-align: left;
 }
 
 .tom-features__description-section > * {
@@ -85,12 +93,51 @@
     margin-bottom: 0.3rem;
 }
 
+@media only screen and (max-width: 768px) {
+    .tom-features {
+        margin-top: 3rem;
+        padding: 1rem 0;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .tom-video {
+        margin-top: 3rem;
+        width:40vw;
+        height: calc(40vw * 13 / 6);
+        border-radius: 10px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.35); 
+        position: static;
+    }
+    
+    .tom-features__description-section {
+        width: fit-content;
+        max-width: 100%;
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .tom-features__description-section > * {
+        opacity: 0.9;
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+    }
+}
+
 
 /* Image Section */
 
 .image-section {
     margin-top: 20vh;
     padding: 0 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .image-section {
+        margin-top: 20vh;
+        padding: 0;
+    }
 }
 
 .section_title.text-center {
@@ -136,4 +183,17 @@
     width: 13rem;
     display: inline-block;
     text-align: right;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .technology__title {
+        display: none;
+    }
+
+    .technology__value {
+        width: 100%;
+        display: inline-block;
+        text-align: left;
+    }
 }
