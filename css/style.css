@@ -93,6 +93,11 @@ a {
     font-size: var(--fs-body);
 }
 
+button {
+    font-size: var(--fs-body);
+    font-weight: var(--fw-semi-bold);
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -139,6 +144,7 @@ footer {
     color: white;
     margin-left: 1rem;
     margin-right: 1rem;
+    display: inline-block;
 }
 
 /* Contact infor */

@@ -13,9 +13,11 @@
 	<nav class="nav-bar">
 		<ul class="nav-link-list">
 			<li id="nav-project" class="nav-link active">
-				<a href="#tom_section">Project</a>
+				<a onclick="scrollToProjectSection()">Project</a>
 			</li>
-			<li id="nav-about" class="nav-link"><a href="#about_me">About</a></li>
+			<li id="nav-about" class="nav-link">
+				<a onclick="scrollToAboutSection()">About</a>
+			</li>
 		</ul>
 	</nav>
 
@@ -29,13 +31,15 @@
 			<h3 class="infor_job_title">Java Full Stack developer</h3>
 		</div>
 	</section>
-	
-	<div class="full-screen-title ">
+
+	<p id="project-title-scroll-target" ></p>
+	<div id="project-title" class="full-screen-title">
 		<h3 class="text-center">Project</h3>
 		<!-- <img class="down-arrow-ic" src="image/icon-down-arrow.svg"> -->
 	</div>
 
 	<!-- Tom description -->
+	<p id="tom-scroll-target"></p>
 	<section id="tom_section" class="description_section">
 		<div class="left_section">
 			<img class="project-title" src="image/tom-title.svg">
@@ -53,6 +57,7 @@
 	</section>
 
 	<!-- FPT Event Management description -->
+	<p id="fem-scroll-target"></p>
 	<section id="fem_section" class="description_section">
 		<div class="fem__left_section">
 			<img class="fem_image fem_image__image_1" src="image/fem_main_image.png">
@@ -70,6 +75,7 @@
 
 
 	<!-- About me  -->
+	<p id="about-title-scroll-target" ></p>
 	<p id="about_me"></p>
 
 	<div class="full-screen-title ">
@@ -77,7 +83,7 @@
 		<!-- <img class="down-arrow-ic" src="image/icon-down-arrow.svg"> -->
 	</div>
 
-	<h4 class="about_me__sub-title text-center">My story</h4>
+	<h4 id="my-story-title" class="about_me__sub-title text-center">My story</h4>
 	<section id="about-me-section" class="description_section">
 		<div class="personal_infor">
 			<div class="my_avatar__decor col-4"></div>
@@ -92,6 +98,7 @@
 			I do believe that with my abilities and experiences with programming so far, I can reach what I want.
 		</p>
 
+		<!-- Tech icon -->
 		<section id="tech-icon-section" class=""></section>
 			<h4 class="about_me__sub-title text-center">Thing I know and more</h4>
 			<div class="tech-icon-row">
@@ -130,8 +137,8 @@
 	
 	<footer>
 		<div class="footer_nav">
-			<a class="footer_nav__link" href="#tom_section">Project</a>
-			<a class="footer_nav__link" href="#about_me">About</a>
+			<p class="footer_nav__link" onclick="scrollToProjectSection()">Project</p>
+			<p class="footer_nav__link" onclick="scrollToAboutSection()">About</p>
 		</div>
 
 		<div class="footer_social_media">
