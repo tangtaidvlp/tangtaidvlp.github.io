@@ -59,124 +59,134 @@ var thanksWord_TargetPoint = $(".thanks-word").offset().top - (viewHeight - than
 
 // SCROLL LISTENER
 document.addEventListener('scroll', () => {
-
-  if (directScroll == true) {
-    return;
-  }
-
-  // Title Project
-  if (window.scrollY > projectTitle_ScrollTriggerPoint) {
-    if (hasScrollTo_TitleProject == false) {
-      hasScrollTo_TitleProject = true;
-    
-      $('html, body').animate({
-        scrollTop: projectTitle_TargetPoint
-      }, 500);
-    }
-
-  } else {
-    hasScrollTo_TitleProject = false;
-  }
-
-  // Tom 
-  if (window.scrollY > tom_ScrollTriggerPoint) {
-    if (hasScrollTo_TOM == false) {
-      hasScrollTo_TOM = true;
-      $('html, body').animate({
-        scrollTop: tom_TargetPoint
-      }, 500);
-    } 
-  } else {
-    hasScrollTo_TOM = false;
-  }
-
-  // Fem
-  if (window.scrollY > fem_ScrollTriggerPoint) {
-    if (hasScrollTo_FEM == false) {
-      hasScrollTo_FEM = true;
-      $('html, body').animate({
-        scrollTop: fem_TargetPoint
-      }, 500);
-    } 
-  } else {
-    hasScrollTo_FEM = false;
-  }
-
   // Title About
   if (window.scrollY > aboutTitle_ScrollTriggerPoint) {
-    if (hasScrollTo_TitleAbout == false) {
-      hasScrollTo_TitleAbout = true;
-    
-      $('html, body').animate({
-        scrollTop: aboutTitle_TargetPoint
-      }, 500);
-      
-      $nav_project.removeClass("active");
-      $nav_about.addClass("active");
-    }
-
+    $nav_project.removeClass("active");
+    $nav_about.addClass("active");
   } else {
-    hasScrollTo_TitleAbout = false;
     $nav_project.addClass("active");
     $nav_about.removeClass("active");
   }
-
-  // My Story
-  if (window.scrollY > myStory_ScrollTriggerPoint) {
-    if (hasScrollTo_MyStory == false) {
-      hasScrollTo_MyStory = true;
-    
-      $('html, body').animate({
-        scrollTop: myStory_TargetPoint
-      }, 500);
-    }
-
-  } else {
-    hasScrollTo_MyStory = false;
-  }
-
-  // My Know Thing
-  if (window.scrollY > myKnowThing_ScrollTriggerPoint) {
-    if (hasScrollTo_MyKnowThing == false) {
-      hasScrollTo_MyKnowThing = true;
-    
-      $('html, body').animate({
-        scrollTop: myKnowThing_TargetPoint
-      }, 500);
-    }
-
-  } else {
-    hasScrollTo_MyKnowThing = false;
-  }
-
-  // Achievement
-  if (window.scrollY > achievement_ScrollTriggerPoint) {
-    if (hasScrollTo_MyAchieve == false) {
-      hasScrollTo_MyAchieve = true;
-    
-      $('html, body').animate({
-        scrollTop: achievement_TargetPoint
-      }, 500);
-    }
-
-  } else {
-    hasScrollTo_MyAchieve = false;
-  }
-
-  // Thanks word
-  if (window.scrollY > thanksWord_ScrollTriggerPoint) {
-    if (hasScrollTo_ThanksWord == false) {
-      hasScrollTo_ThanksWord = true;
-    
-      $('html, body').animate({
-        scrollTop: thanksWord_TargetPoint
-      }, 500);
-    }
-
-  } else {
-    hasScrollTo_ThanksWord = false;
-  }
 })
+// document.addEventListener('scroll', () => {
+
+//   if (directScroll == true) {
+//     return;
+//   }
+
+//   // Title Project
+//   if (window.scrollY > projectTitle_ScrollTriggerPoint) {
+//     if (hasScrollTo_TitleProject == false) {
+//       hasScrollTo_TitleProject = true;
+    
+//       $('html, body').animate({
+//         scrollTop: projectTitle_TargetPoint
+//       }, 500);
+//     }
+
+//   } else {
+//     hasScrollTo_TitleProject = false;
+//   }
+
+//   // Tom 
+//   if (window.scrollY > tom_ScrollTriggerPoint) {
+//     if (hasScrollTo_TOM == false) {
+//       hasScrollTo_TOM = true;
+//       $('html, body').animate({
+//         scrollTop: tom_TargetPoint
+//       }, 500);
+//     } 
+//   } else {
+//     hasScrollTo_TOM = false;
+//   }
+
+//   // Fem
+//   if (window.scrollY > fem_ScrollTriggerPoint) {
+//     if (hasScrollTo_FEM == false) {
+//       hasScrollTo_FEM = true;
+//       $('html, body').animate({
+//         scrollTop: fem_TargetPoint
+//       }, 500);
+//     } 
+//   } else {
+//     hasScrollTo_FEM = false;
+//   }
+
+//   // Title About
+//   if (window.scrollY > aboutTitle_ScrollTriggerPoint) {
+//     if (hasScrollTo_TitleAbout == false) {
+//       hasScrollTo_TitleAbout = true;
+    
+//       $('html, body').animate({
+//         scrollTop: aboutTitle_TargetPoint
+//       }, 500);
+      
+//       $nav_project.removeClass("active");
+//       $nav_about.addClass("active");
+//     }
+
+//   } else {
+//     hasScrollTo_TitleAbout = false;
+//     $nav_project.addClass("active");
+//     $nav_about.removeClass("active");
+//   }
+
+//   // My Story
+//   if (window.scrollY > myStory_ScrollTriggerPoint) {
+//     if (hasScrollTo_MyStory == false) {
+//       hasScrollTo_MyStory = true;
+    
+//       $('html, body').animate({
+//         scrollTop: myStory_TargetPoint
+//       }, 500);
+//     }
+
+//   } else {
+//     hasScrollTo_MyStory = false;
+//   }
+
+//   // My Know Thing
+//   if (window.scrollY > myKnowThing_ScrollTriggerPoint) {
+//     if (hasScrollTo_MyKnowThing == false) {
+//       hasScrollTo_MyKnowThing = true;
+    
+//       $('html, body').animate({
+//         scrollTop: myKnowThing_TargetPoint
+//       }, 500);
+//     }
+
+//   } else {
+//     hasScrollTo_MyKnowThing = false;
+//   }
+
+//   // Achievement
+//   if (window.scrollY > achievement_ScrollTriggerPoint) {
+//     if (hasScrollTo_MyAchieve == false) {
+//       hasScrollTo_MyAchieve = true;
+    
+//       $('html, body').animate({
+//         scrollTop: achievement_TargetPoint
+//       }, 500);
+//     }
+
+//   } else {
+//     hasScrollTo_MyAchieve = false;
+//   }
+
+//   // Thanks word
+//   if (window.scrollY > thanksWord_ScrollTriggerPoint) {
+//     if (hasScrollTo_ThanksWord == false) {
+//       hasScrollTo_ThanksWord = true;
+    
+//       $('html, body').animate({
+//         scrollTop: thanksWord_TargetPoint
+//       }, 500);
+//     }
+
+//   } else {
+//     hasScrollTo_ThanksWord = false;
+//   }
+// })
 
 //#endregion AUTO SCROLL PROCESS
 
@@ -195,6 +205,10 @@ function scrollToProjectSection () {
   }, 500, function () {
     directScroll = false;
   });
+
+
+  $nav_project.addClass("active");
+  $nav_about.removeClass("active");
 }
 
 function scrollToAboutSection () {
