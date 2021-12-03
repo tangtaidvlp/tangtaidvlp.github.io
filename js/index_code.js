@@ -14,5 +14,4 @@ document.addEventListener('scroll', () => {
     nav_about.className = "nav-link";
   } 
 
-
 })

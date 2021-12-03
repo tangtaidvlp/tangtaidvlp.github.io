@@ -84,6 +84,8 @@
 
 .project-title {
     height: 5rem;
+    max-width: 80%;
+    object-fit: contain;
 }
 
 .full-screen-title {
