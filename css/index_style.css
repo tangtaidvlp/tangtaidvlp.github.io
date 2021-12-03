@@ -81,6 +81,15 @@
 
 
 /* Project General  */
+#content-section {
+    padding: 0 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    #content-section {
+        padding: 0 1.5rem;
+    }
+}
 
 .project-title {
     height: 5rem;
@@ -102,6 +111,7 @@
     margin-bottom: 1rem;
 }
 
+
 .down-arrow-ic {
     width: 1.5rem;
     display: block;
@@ -117,8 +127,7 @@
 }
 
 .description_section {
-    margin-left: 2rem;
-    margin-right: 2rem;   
+
 }
 
 .more-detail-button {
@@ -145,6 +154,11 @@
     transform: translateY(30px);
 }
 
+@media only screen and (max-width: 768px) {
+    .more-detail--down {
+        transform: none;
+    }
+}
 
 /* Tom */
 
@@ -184,6 +198,49 @@
     right: 0;
     top: 0;
     box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 768px) {
+
+    #tom_section {
+        margin-top: 3rem;
+        display: block;
+        align-items: center;
+        height: 70vh;
+        width: 100%;
+    }
+
+    #tom_section > .left_section {
+        width: 100%;
+    }
+    
+    #tom_section > .right_section {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 2rem;
+        height: 50vh;
+        position: relative;
+    }
+
+    .right_section .tom_image {
+        background-color: white;
+        border-radius: 0.65rem;
+        width: 37%;
+        height: auto;
+        position: absolute;
+    }
+
+    .tom_image__image_2 {
+        left: 18%;
+        top: 10%;
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .tom_image__image_1 {
+        right: 23%;
+        top: 0;
+        box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.1);
+    }
 }
 
 
@@ -229,12 +286,56 @@
     text-align: right;
 }
 
+@media only screen and (max-width: 768px) {
 
+    #fem_section {
+        margin-top: 30rem;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: fit-content;
+        width: 100%;
+    }
+    
+    .fem__left_section {
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .fem__left_section > img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .fem__right_section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: relative;
+    }
+    
+    .fem__right_section > .more-detail-button {
+        position: relative;
+        bottom: -1rem;
+    }
+    
+    .fem__right_section > .project-description {
+        text-align: right;
+    }
+}
 
 /* About me */
 
 #about-me-section, #achievement-section {
     padding: 0 10vw;
+}
+
+@media only screen and (max-width: 768px) {
+    #about-me-section, #achievement-section {
+        padding: 0;
+    }
 }
 
 .about-title {
@@ -244,6 +345,7 @@
 }
 
 .about_me__sub-title {
+
 }
 
 .personal_infor {
@@ -268,6 +370,16 @@
     background-color: var(--clr-light-grey);
 }
 
+@media only screen and (max-width: 768px) {
+    .personal_infor > .my_avatar {
+        width: 40vw;
+        height: auto;
+        border-radius: 0.7rem;
+        border: 0.4rem solid rgba(255, 255, 255);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+}
+
 .personal_infor > .my_name {
     margin-top: 1.2rem;
     margin-bottom: 0;
@@ -284,6 +396,14 @@
 
 #tech-icon-section {
     margin-top: 50vh;
+}
+
+@media only screen and (max-width: 768px) {
+
+    #tech-icon-section {
+        margin-top: 30vh;
+    }
+
 }
 
 .tech-icon-row {
@@ -303,9 +423,39 @@
     margin-right: 0 !important;
 }
 
+@media only screen and (max-width: 768px) {
+    .tech-icon-row {
+        text-align: center;
+        margin: 0rem 1rem;
+    }
+
+    .tech-icon-row > .tech-icon{
+        width: 13%;
+        height: auto;
+        margin-right: 2%;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+        border-radius: 50%;
+    }
+    
+    .tech-icon-row > .tech-icon:last-child, .tech-icon-row > .tech-icon:nth-child(6) {
+        margin-right: 0 !important;
+    }
+
+    .tech-icon-row > .tech-icon:nth-child(5) ~ .tech-icon {
+        margin-top: 1rem ;
+    }
+}
+
 /* Achievement */
 #achievement-section {
     margin-top: 50vh;
+}
+
+@media only screen and (max-width: 768px) {
+
+    #achievement-section {
+        margin-top: 30vh;
+    }
 }
 
 .my_achieve_image {
