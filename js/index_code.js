@@ -16,7 +16,6 @@ var hasScrollTo_MyKnowThing = false;
 var hasScrollTo_MyAchieve = false;
 var hasScrollTo_ThanksWord = false;
 
-
 var viewHeight = $(window).height();
 var scrollTriggerPoint = viewHeight * 0.2;
 var navbarHeight = $(".nav-bar")[0].offsetHeight;
@@ -39,7 +38,7 @@ var aboutTitle_TargetPoint = $("#about-title-scroll-target").offset().top + navb
 
 // My Story
 var myStory_ScrollTriggerPoint = aboutTitle_TargetPoint + scrollTriggerPoint;
-var myStory_TargetPoint = $("#my-story-title").offset().top - (viewHeight / 10) - navbarHeight;
+var myStory_TargetPoint = $("#my-story-title").offset().top - (viewHeight * 0.1) - navbarHeight;
 
 // My Know Thing
 var myKnowThing_ScrollTriggerPoint = myStory_TargetPoint + scrollTriggerPoint;
@@ -51,7 +50,6 @@ var achievement_ScrollTriggerPoint = myKnowThing_TargetPoint + scrollTriggerPoin
 var archievement_section_height = $("#achievement-section")[0].offsetHeight; 
 var achievement_TargetPoint = $("#achievement-section").offset().top - navbarHeight;
 
-
 // Thanks word
 var thanksWord_ScrollTriggerPoint = achievement_TargetPoint + scrollTriggerPoint;
 var thanksWord_height = $(".thanks-word")[0].offsetHeight; 
@@ -59,6 +57,7 @@ var thanksWord_TargetPoint = $(".thanks-word").offset().top - (viewHeight - than
 
 // SCROLL LISTENER
 document.addEventListener('scroll', () => {
+
   // Title About
   if (window.scrollY > aboutTitle_ScrollTriggerPoint) {
     $nav_project.removeClass("active");
@@ -67,6 +66,7 @@ document.addEventListener('scroll', () => {
     $nav_project.addClass("active");
     $nav_about.removeClass("active");
   }
+
 })
 // document.addEventListener('scroll', () => {
 
